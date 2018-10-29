@@ -1,0 +1,104 @@
+.main{
+	width: 18%;
+	box-sizing: content-box;    
+    padding: 30px;    
+    border: 1px solid #eaeaea;
+    margin: auto;
+    font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+}
+aside {
+	padding-top: 10px;
+}
+span.orange {
+	color: #EF5F3C;
+}
+#progressbar{
+	margin: auto;
+	width: 22.5%;
+}
+progress {
+	background: #EF5F3C;
+}
+
+progress::-webkit-progress-value {
+  background: #EF5F3C;
+}
+
+.progress-bar {
+	margin: auto;
+	display: flex;
+}
+.field{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn {
+	background-color: #1CBC2C;
+    border: none;
+    color: white;
+    text-align: center; 
+    height: 46px;
+    width: 100px;
+}
+.size{
+	width: 100px;
+	height: 40px;
+	margin-right: 10px;
+}
+a {
+	text-decoration: none;
+}
+.link {
+	color: #20A1D4;
+}
+.sub-btn {
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center; 
+    padding: 15px 20px;
+    font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+    font-weight: bold;
+    color: #777;
+    background-color: #eaeaea;
+}
+.subsection {
+	padding-top: 10px;
+	margin: auto;
+	width: 21%;
+    display: flow-root;
+    font-weight: 13px;
+
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 20;
+	right: 30;
+	bottom: 20;
+	left: 30;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}

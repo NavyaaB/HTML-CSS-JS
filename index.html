@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>HTML & CSS</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript">
+		function move(){
+			var progress = document.getElementById("progressbar");
+			//console.log('!!!!');
+			progress.value = progress.value +10;
+		}
+	</script>
+</head>
+<body>
+<div class="progress-bar">
+<progress id="progressbar" value="22" max="100"></progress>
+</div>
+<section class="main">
+	<p class="head"><span class="orange">Only 3 days left </span>to fund this project.</p>
+	Join the 42 other donors who have alredy supported project. Every dollar helps.
+	<aside>
+		<input type="text" class="field size" placeholder="$50">
+		<button class="field btn" onclick="move()">Give Now</button>
+		<br/>
+		<p class="link"><i><a href="#openModal">Why give $50?</a></i></p>
+
+	</aside>
+	<div id="openModal" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<p>Close modal</p>
+		</div>
+	</div>
+</section>
+
+<div class="subsection">
+<button class="sub-btn">Save for later</button>
+<button class="sub-btn">Tell your friends</button>
+</div>
+</body>
+</html>
